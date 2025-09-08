@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Password Protected</title>
+  <script>
+    function checkPassword() {
+      var password = prompt("Enter the password: The password is my birthday");
+      if (password === "11122010") {
+        document.getElementById("content").style.display = "block";
+      } else {
+        alert("Wrong password!");
+        window.location.reload();
+      }
+    }
+    window.onload = checkPassword;
+  </script>
+</head>
+<body>
+  <div id="content" style="display:none;">
+    <h1>Hurray!You did it! It was probably pretty easy but this was kinda fun to make, Ill defo make a longer one sometime</h1>
+    <p>I love youuuu! Behehe</p>
+  </div>
+</body>
+</html>
